@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Sass Project</title>
+  <link rel="stylesheet" href="index.css">
+  <script>
+    fetch('./layout/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('header').innerHTML = data;
+      });
+  </script>
+</head>
+
+<body>
+  <header>
+    This is the header.
+  </header>
+  <main class="main">
+    <div>
+      <h1>Food tour's Purple Rabbit & Carrot</h1>
+      <h2>Menu</h2>
+      <div class="container">
+        <div class="morning">
+          <h3>Ăn Sáng</h3>
+          <div>
+            <ul>
+              <li>Bún Thái</li>
+              <li>Hủ Tiếu Mì</li>
+              <li>Mì Cay</li>
+              <li>Cơm Sườn</li>
+              <li>Mì Bò Kho</li>
+              <li>Bò Bít Tết</li>
+              <li>Món chay (Bún Huế, Bún Bò,...)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dinner">
+          <h3>Ăn tối</h3>
+          <div>
+            <ul>
+              <li>Bánh Canh</li>
+              <li>Mì Cay</li>
+              <li>Xiên Que</li>
+              <li>Hủ Tiếu Mì</li>
+              <li>Tokbokki</li>
+              <li>Sủi cảo</li>
+              <li>Mì Viên</li>
+              <li>Nui Xào Bò</li>
+              <li>Món chay (Bún Huế, Bún Bò,...)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dessert">
+          <h3>Tráng Miệng</h3>
+          <div>
+            <ul>
+              <li>Trà Sữa</li>
+              <li>Milo Dầm</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Signature</h3>
+          Waiting............
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="center">Nhắn tin Zalo để order. <br>
+        Chúc bé Thỏ ngon miệng :3 </h2>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <footer></footer>
+  <script>
+    fetch('./layout/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('footer').innerHTML = data;
+      });
+  </script>
+</body>
+
+</html>

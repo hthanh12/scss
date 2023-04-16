@@ -1,0 +1,64 @@
+$primary-color: #678983;
+$second-color: #E6DDC4;
+$third-color: #569DAA;
+$four-color: #577D86;
+$min-width-laptop: 1024px;
+$min-width-tablet: 768px;
+
+
+footer {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    align-content: space-between;
+
+    @media only screen and (min-width: $min-width-laptop) {
+        flex-direction: row;
+    }
+
+
+    .morning {
+        // background-image: url("https://cdn.tgdd.vn/2020/09/CookRecipe/Avatar/hu-tieu-mi-thumbnail.jpg");
+        // height: auto;
+        // width: 100%;
+        // // background-color: #000000;
+        // background-position: top 50%;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+    }
+}
+
+body {
+    background-color: $primary-color;
+    color: $second-color
+}
+
+main {
+    width: 100wh;
+    height: auto;
+    margin: 0 20px;
+
+    h1 {
+        color: $second-color;
+    }
+
+    div {
+
+        @media only screen and (min-width: $min-width-tablet) {
+            margin: 0px;
+        }
+    }
+}
